@@ -1,5 +1,5 @@
-import img1 from './assets/img/1.png'
-import './LogIn.css'
+import img1 from "./assets/img/1.png";
+import "./LogIn.css";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
           <nav className="navbar__links">
             <button className="btn-1">How It Works</button>
             <button className="btn-1">Browse Items</button>
-            <button className="btn-1">List become lender</button>
-            <button className="btn-1">about us</button>
+            <button className="btng-1">Become Lender</button>
+            <button className="btn-1">About us</button>
           </nav>
 
           <div className="navbar__meta">
@@ -30,7 +30,9 @@ function App() {
       <main className="page">
         <section className="hero">
           <p className="hero__eyebrow">Rent. Borrow. Share.</p>
-          <h1 className="hero__title">Borrow what you need, when you need it.</h1>
+          <h1 className="hero__title">
+            Borrow what you need, when you need it.
+          </h1>
           <p className="hero__subtitle">
             Eliminate the need to buy expensive products, just rent it
           </p>
@@ -79,16 +81,22 @@ function App() {
           </div>
 
           <div className="testimonial">
-            <span className="testimonial__quote">&ldquo;</span>
-            <p className="testimonial__text">
-              I rented a camera for my vacation and saved hundreds. The process was
-              smooth and the owner was great!
-            </p>
+            <span className="testimonial__quote" aria-hidden="true">
+              &ldquo;
+            </span>
+            <blockquote className="testimonial__text">
+              I rented a camera for my vacation and saved hundreds. The process
+              was smooth and the owner was great!
+            </blockquote>
             <div className="testimonial__author">
-              <span className="testimonial__avatar">SM</span>
+              <span className="testimonial__avatar" aria-hidden="true">
+                SM
+              </span>
               <div>
                 <p className="testimonial__name">Sarah M.</p>
-                <p className="testimonial__stars">★★★★★</p>
+                <p className="testimonial__stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </p>
               </div>
             </div>
           </div>
@@ -114,18 +122,27 @@ function App() {
           <div className="login-card">
             <h2 className="login-card__title">Welcome back!</h2>
             <p className="login-card__subtitle">
-              Log in to continue to <span className="link link--inline">We Borrow</span>
+              Log in to continue to{" "}
+              <span className="link link--inline">We Borrow</span>
             </p>
 
             <form className="login-form">
               <label htmlFor="email">Email Address</label>
               <div className="input-wrap">
-                <input id="email" type="email" placeholder="Enter your email address" />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                />
               </div>
 
               <label htmlFor="password">Password</label>
               <div className="input-wrap">
-                <input id="password" type="password" placeholder="Enter your password" />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter your password"
+                />
               </div>
 
               <div className="login-form__row">
@@ -145,22 +162,35 @@ function App() {
               </div>
 
               <button type="button" className="btn-social">
+                <img
+                  src="src/assets/login-icons/google-logo.png"
+                  alt="Google"
+                  className="socialicon"
+                ></img>
                 Continue with Google
               </button>
 
               <button type="button" className="btn-social">
+                <img
+                  src="src/assets/login-icons/fb-logo.png"
+                  alt="Facebook"
+                  className="socialicon"
+                ></img>
                 Continue with Facebook
               </button>
 
               <p className="signup-link">
-                Don't have an account? <button type="button" className="btn-1">Sign up here</button>
+                Don't have an account?{" "}
+                <button type="button" className="btn-1">
+                  Sign up here
+                </button>
               </p>
             </form>
           </div>
         </section>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
