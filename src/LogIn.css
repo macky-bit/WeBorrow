@@ -5,8 +5,16 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+html,
+body {
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   color: #1a1d23;
   background: #ffffff;
 }
@@ -32,7 +40,11 @@ button {
   color: #2c2f37;
   font-size: 14px;
   font-weight: 600;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .btn-1:hover {
@@ -100,7 +112,9 @@ ul {
   padding: 10px 14px;
   border-radius: 12px;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 }
 
 .navbar__links button:hover,
@@ -196,9 +210,18 @@ ul {
   flex-shrink: 0;
 }
 
-.stat__icon--wallet { background: #e4f3ea; color: #1f9d55; }
-.stat__icon--users  { background: #e9eefb; color: #3457d5; }
-.stat__icon--rate   { background: #e4f3ea; color: #1f9d55; }
+.stat__icon--wallet {
+  background: #e4f3ea;
+  color: #1f9d55;
+}
+.stat__icon--users {
+  background: #e9eefb;
+  color: #3457d5;
+}
+.stat__icon--rate {
+  background: #e4f3ea;
+  color: #1f9d55;
+}
 
 .stat__value {
   font-size: 19px;
@@ -216,14 +239,14 @@ ul {
 .collage {
   position: relative;
   margin-bottom: 28px;
-  display: block;      
-  max-width: 640px;   
+  display: block;
+  max-width: 640px;
 }
 
 .collage__scene {
   position: relative;
   height: 440px;
-  width: 100%;          /* scale with .collage instead of a fixed 640px */
+  width: 100%; /* scale with .collage instead of a fixed 640px */
   background: linear-gradient(180deg, #eef0ee 0%, #e7e9e6 70%, #e7e9e6 100%);
   border-radius: 16px;
   overflow: hidden;
@@ -235,7 +258,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   
+  object-fit: cover;
   object-position: center;
   display: block;
 }
@@ -326,31 +349,39 @@ ul {
 /* ---- Testimonial ---- */
 .testimonial {
   position: relative;
-  background: #fafafa;
+  background: #ffffff;
   border: 1px solid #ececec;
   border-radius: 14px;
-  padding: 22px 26px 18px;
+  padding: 24px 28px;
   max-width: 420px;
   margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+.testimonial:hover {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.07),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
 .testimonial__quote {
   position: absolute;
-  top: 6px;
-  left: 18px;
-  font-size: 38px;
-  color: #c8cad0;
+  top: 8px;
+  left: 20px;
+  font-size: 44px;
+  color: #e4e6ea;
   font-family: Georgia, serif;
   line-height: 1;
+  font-weight: 700;
 }
-
 
 .testimonial__text {
   font-size: 14px;
   color: #3a3d44;
-  line-height: 1.55;
-  margin-bottom: 14px;
-  padding-left: 14px;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 0 18px 0;
+  padding-top: 28px;
 }
 
 .testimonial__author {
@@ -358,11 +389,17 @@ ul {
   align-items: center;
   gap: 10px;
 }
-
 .testimonial__avatar {
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  overflow: hidden;
+  background: #eef0f3;
+  color: #5a5d66;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
@@ -370,14 +407,15 @@ ul {
   font-size: 13.5px;
   font-weight: 600;
   color: #1a1d23;
+  margin: 0;
 }
 
 .testimonial__stars {
   font-size: 12px;
   color: #f5b942;
   letter-spacing: 1px;
+  margin: 2px 0 0 0;
 }
-
 /* ---- Trust row ---- */
 .trust-row {
   display: flex;
@@ -433,6 +471,7 @@ ul {
   font-weight: 600;
   color: #2c2f37;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .input-wrap {
@@ -480,25 +519,38 @@ ul {
   margin-bottom: 22px;
   font-size: 13.5px;
 }
-
 .checkbox {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: #3a3d44;
   font-weight: 400;
-  margin: 0;
+  margin: 10px 0 0 0;
+  cursor: pointer;
 }
 
 .checkbox input {
   width: 15px;
   height: 15px;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
   accent-color: #2f6dee;
+  cursor: pointer;
 }
-
 .forgot-link {
   color: #2f6dee;
   font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.forgot-link:hover {
+  color: #1a4fc4;
+  text-decoration: underline;
+  opacity: 0.85;
 }
 
 .btn-primary {
@@ -541,28 +593,35 @@ ul {
   font-size: 12.5px;
   color: #9aa0aa;
 }
-
 .btn-social {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 11px;
-  background: #ffffff;
-  border: 1px solid #dcdfe4;
-  border-radius: 10px;
-  font-size: 14px;
+  width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 6px;
+  border: 1px solid #d8dce1;
+  border-radius: 8px;
+  background: #fff;
+  color: #3a3d44;
   font-weight: 500;
-  color: #2c2f37;
-  margin-bottom: 12px;
-  transition: background 0.15s ease;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .btn-social:hover {
-  background: #f7f8fa;
+  background: #f5f6f8;
+  border-color: #c2c7d0;
 }
 
+.socialicon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
 .signup-link {
   text-align: center;
   font-size: 13.5px;
@@ -603,7 +662,6 @@ ul {
 
   .collage__scene {
     height: 240px;
-    
   }
 
   .trust-row {
